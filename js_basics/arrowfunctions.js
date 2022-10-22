@@ -21,4 +21,14 @@ return function sum(...args){
 
 console.log(sum(1,2,3));
 
+//spread operator
+const arr1 =['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'];
+let arr2;
+
+(function(){
+    arr2 = [...arr1];
+    arr1[0] = 'potato';
+})();
+console.log(arr2)
+
 
